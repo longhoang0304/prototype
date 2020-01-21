@@ -1,3 +1,13 @@
+package main
+
+import (
+	"fmt"
+	"log"
+
+	"gopkg.in/yaml.v2"
+)
+
+var data = `
 type: model
 extends:
     - ./mongo_meta
@@ -16,3 +26,14 @@ users: # collection/table name
 
 export:
     - users
+`
+
+func main() {
+	m := make(map[interface{}]interface{})
+
+	err := yaml.Unmarshal([]byte(data), &m)
+	if err != nil {
+		log.Fatalf("error: %v", err)
+	}
+	fmt.Printf("--- m:\n%v\n\n", m)
+}

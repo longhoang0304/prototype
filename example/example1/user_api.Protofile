@@ -7,4 +7,4 @@ extends:
 
 name: user-api
 endpoint: users/
-db: user-db
+db: users
