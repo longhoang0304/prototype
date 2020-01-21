@@ -1,0 +1,10 @@
+type: api
+import:
+    - ./user-db
+
+extends:
+    - ./api_meta
+
+name: user-api
+endpoint: users/
+db: user-db

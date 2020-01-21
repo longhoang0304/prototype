@@ -1,0 +1,10 @@
+type: api
+version: "1.0"
+use: nodejs
+deps:
+    - momentjs
+    - expressjs
+    - lodash
+handler: expressjs
+
+prefix: /api/v1/

@@ -1,0 +1,15 @@
+type: model
+extends:
+    - ./mongo_meta
+
+users: # collection/table name
+    username:
+        - string
+        - required
+    password: # required field
+        - string
+        - required
+    token: # hidden field
+        - string
+        - hidden
+    email: string # nullable field

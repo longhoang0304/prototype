@@ -1,0 +1,7 @@
+type: model
+use: mongodb
+
+db_username: admin
+db_password: admin
+db_host: localhost
+db_port: 3000

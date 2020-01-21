@@ -1,0 +1,4 @@
+type: view
+use: react-redux-axios
+
+api: ./user_api
